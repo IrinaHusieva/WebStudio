@@ -159,11 +159,24 @@ body {
   letter-spacing: 0.02em;
 }
 .container {
-  width: 1158px;
+  /* width: 1158px; */
+  min-width: 320px;
+  max-width: 396px;
+
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
 }
 
 /* HERO SECTION */
@@ -185,14 +198,32 @@ body {
   padding-top: 188px;
 }
 .h-title {
-  line-height: calc(60 / 56);
-  font-size: 56px;
-  width: 494px;
-  margin-bottom: 48px;
+  /* line-height: calc(60 / 56);
+  font-size: 56px; */
+  /* width: 494px; */
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  max-width: 320px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .h-title {
+    max-width: 496px;
+    line-height: calc(60 / 56);
+    font-size: 56px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .h-title {
+    margin-bottom: 48px;
+  }
+}
+
 .button {
   background-color: var(--button-bg-cl);
   color: var(--hero-txt-cl);
