@@ -381,16 +381,45 @@ body {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   text-align: center;
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  flex-basis: calc((100% - 1 * 72px) / 1);
 }
+
 .team-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 128px;
 }
 .team-items {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   padding-left: 0;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .team-container {
+    padding-bottom: 104px;
+  }
+  .team-items {
+    flex-direction: row;
+    gap: 64px 24px;
+    flex-wrap: wrap;
+  }
+  .team {
+    flex-basis: calc((100% - 1 * 24px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-items {
+    gap: 24px;
+  }
+  .team {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+  .team-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 .txt-team {
   margin-bottom: 8px;
@@ -589,7 +618,7 @@ ul {
 }
 .subscribe-input {
   /* width: 264px; */
-  /* height: 40px; */
+
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
