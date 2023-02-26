@@ -137,7 +137,7 @@ section {
 .address,
 .header-logo {
   padding-top: 24px;
-  padding-bottom: 31px;
+  padding-bottom: 28px;
 }
 .header-list {
   display: flex;
@@ -152,7 +152,44 @@ section {
   text-decoration: none;
   color: var(--primary-txt-cl);
 }
+@media screen and (min-width: 768px) {
+  .header-address {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .address {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-address {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+  .address-items {
+    display: none;
+  }
+}
+.menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+}
 /* BODY */
 
 body {
