@@ -584,33 +584,65 @@
     <!-- Mobile menu -->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button
-        class="modal-btn menu-toggle js-close-menu"
-        type="button"
-        data-modal-close
-      >
+      <button class="modal-btn js-close-menu" type="button" data-modal-close>
         <svg class="modal-icon" width="8" height="8">
           <use href="./images/icons/icons.svg#icon-close"></use>
         </svg>
       </button>
-
-      <ul class="mobile-menu">
-        <li><a href="" class="link">Studio</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-      </ul>
-      <ul class="contacts-menu">
-        <li class="address-menu">
-          <a class="link-address link" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li class="address-menu link">
-          <a class="mail-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
+      <div class="div-pos">
+        <ul class="mobile-menu">
+          <li><a href="./index.html" class="link">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link contacts-link">Contacts</a></li>
+        </ul>
+        <ul class="contacts-menu">
+          <li class="address-menu">
+            <a class="link-address link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="address-menu link">
+            <a class="mail-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="socials-menu">
+          <li class="socials-item-menu">
+            <a
+              class="socials-link-menu"
+              href="https://instagram.com"
+              rel="noopener noreferrer"
+              aria-label="Instagram link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item-menu">
+            <a class="socials-link-menu" href="" aria-label="Twitter link">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item-menu">
+            <a class="socials-link-menu" href="" aria-label="Facebook link">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item-menu">
+            <a class="socials-link-menu" href="" aria-label="Linkedin link">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script defer src="js/mobile-menu.js"></script>
