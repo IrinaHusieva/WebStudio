@@ -86,7 +86,6 @@ section {
   line-height: calc(24 / 18);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 .logo-design {
   color: var(--logo-txt-cl);
@@ -160,11 +159,17 @@ section {
   .address {
     padding: 0;
   }
+  .header-logo {
+    margin-right: 123px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header-address {
     flex-direction: row;
     gap: 40px;
+  }
+  .header-logo {
+    margin-right: 76px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -516,6 +521,7 @@ ul {
   }
   .customers-list {
     gap: 24px;
+    flex-wrap: nowrap;
   }
   .customers {
     padding-top: 120px;
@@ -553,17 +559,6 @@ ul {
 .footer {
   background-color: var(--primary-bg-cl);
   color: var(--footer-txt-cl);
-  /* display: flex; */
-  /* align-items: baseline; */
-
-  /* padding-top: 96px;
-  padding-bottom: 96px;
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
-  flex-wrap: wrap;
-  align-items: center;
-  text-align: center; */
 }
 .txt-foot {
   line-height: calc(24 / 16);
@@ -575,10 +570,6 @@ ul {
   color: var(--footer-txt-cl);
 }
 .footer-container {
-  /* padding-top: 100px;
-  padding-bottom: 100px;
-  
-  align-items: baseline; */
   padding-top: 96px;
   padding-bottom: 96px;
 
@@ -590,9 +581,6 @@ ul {
   align-items: center;
   text-align: center;
   justify-content: center;
-
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .social-media {
@@ -650,12 +638,7 @@ ul {
   gap: 16px;
 }
 
-.subscribe-field {
-  /* margin-right: 24px; */
-}
 .subscribe-input {
-  /* width: 264px; */
-
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -720,7 +703,27 @@ ul {
   .footer-container {
     text-align: left;
   }
-  .subscribe {
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+  .social-media {
+    margin-right: 80px;
+  }
+  .footer-div {
+    margin-right: 120px;
+  }
+  .footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .subscribe-field {
+    margin-right: 24px;
+  }
+  .subscribe-form {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
@@ -825,7 +828,11 @@ ul {
     flex-basis: calc((100% - 1 * 24px) / 2);
   }
   .portfolio-links {
+    justify-content: flex-start;
     gap: 72px 24px;
+  }
+  .portfolio-btn {
+    padding: 12px 24px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1121,7 +1128,7 @@ ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 284px;
+  margin-bottom: 200px;
 }
 
 .mobile-menu .link,
@@ -1152,6 +1159,7 @@ ul {
   /* align-items: center;
   justify-content: center; */
   gap: 56px;
+  width: 100%;
 }
 .socials-link-menu {
   display: flex;
