@@ -813,6 +813,7 @@ ul {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 .prtf-link {
   flex-basis: calc((100% - 1 * 24px) / 1);
