@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./CSS/style.css"/>
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
 
   <body>
@@ -55,12 +55,15 @@
             </li>
           </ul>
         </address>
-         <button class="menu-btn" type="button">
-          <svg class="header-menu-icon" width="32px" height="22px">
-                  <use href="./images/icons/icons.svg#menu"></use>
-
+        <button
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="menu-toggle" width="32px" height="22px">
+            <use href="./images/icons/icons.svg#menu"></use>
           </svg>
-
         </button>
       </div>
     </header>
@@ -279,7 +282,7 @@
         </div>
       </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-div">
           <a class="footer-logo link" href="./index.html"
@@ -341,13 +344,86 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="button subscribe-btn" type="submit">Subscribe
+            <button class="button subscribe-btn" type="submit">
+              Subscribe
               <svg class="subscribe-icon" width="24" height="20">
                 <use href="./images/icons/icons.svg#icon-subscribe"></use>
-              </button>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="modal-btn js-close-menu" type="button" data-modal-close>
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="div-pos">
+        <ul class="mobile-menu">
+          <li><a href="./index.html" class="link">Studio</a></li>
+          <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link contacts-link">Contacts</a></li>
+        </ul>
+        <ul class="contacts-menu">
+          <li class="address-menu">
+            <a class="link-address link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="address-menu link">
+            <a class="mail-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="socials-menu">
+          <li class="socials-item-menu">
+            <a
+              class="socials-link-menu"
+              href="https://instagram.com"
+              rel="noopener noreferrer"
+              aria-label="Instagram link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item-menu">
+            <a class="socials-link-menu" href="" aria-label="Twitter link">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item-menu">
+            <a class="socials-link-menu" href="" aria-label="Facebook link">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials-item-menu">
+            <a class="socials-link-menu" href="" aria-label="Linkedin link">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
