@@ -283,7 +283,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero_deskt/_desktop_@1x.webp);
+      url(../images/hero_deskt/desktop@1x.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -297,7 +297,7 @@ body {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero_deskt/_desktop_@2x.webp);
+        url(../images/hero_deskt/desktop@2x.webp);
     }
   }
 }
